@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Identitas Mahasiswa - [Nama Anda]</title>
+    <title>Kartu Mahasiswa - [Nama Anda]</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -15,43 +15,59 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            overflow: hidden;
         }
 
-        .container {
+        .card {
+            width: 100%;
+            max-width: 500px;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 40px;
-            border-radius: 10px;
-            width: 80%;
-            max-width: 700px;
+            color: #fff;
+            transition: transform 0.3s;
         }
 
-        .header {
-            font-size: 2.5em;
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-header {
+            font-size: 2em;
             font-weight: bold;
             color: #FFD700;
             margin-bottom: 20px;
         }
 
-        .identity-info {
-            margin-top: 20px;
-            font-size: 1.2em;
+        .card-content {
+            font-size: 1.1em;
+            line-height: 1.6;
         }
 
-        .identity-info p {
+        .card-content p {
             margin: 10px 0;
         }
 
-        .identity-info span {
+        .card-content span {
             font-weight: bold;
         }
 
+        .card-footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #ddd;
+            padding-top: 10px;
+            border-top: 2px solid #FFD700;
+        }
+
         .btn {
-            margin-top: 30px;
-            padding: 10px 20px;
+            margin-top: 20px;
+            padding: 12px 25px;
             background-color: #FFD700;
             color: #000;
-            font-size: 1em;
+            font-size: 1.2em;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -61,42 +77,35 @@
         .btn:hover {
             background-color: #FF4500;
         }
-
-        .footer {
-            margin-top: 30px;
-            font-size: 1em;
-            color: #ddd;
-        }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="header">Identitas Mahasiswa</div>
+    <div class="card">
+        <div class="card-header">Kartu Identitas Mahasiswa</div>
         
-        <div class="identity-info">
-            <p><span>Nama:</span> ILHAM </p>
-            <p><span>Universitas:</span> Universitas Muhammadiyah Bima </p>
-            <p><span>Fakultas:</span>  TEKNIK DAN ILMU KOMPUTER </p>
-            <p><span>Jurusan:</span> ILMU KOMPUTER </p>
-            <p><span>Tahun Masuk:</span> 2022 </p>
-            <p><span>Email:</span> ilham.b02220042@gmail.com </p>
+        <div class="card-content">
+            <p><span>Nama:</span> Ilham</p>
+            <p><span>Universitas:</span> Universitas Muhammadiyah Bima</p>
+            <p><span>Fakultas:</span> Teknik dan Ilmu Komputer</p>
+            <p><span>Jurusan:</span> Ilmu Komputer</p>
+            <p><span>Tahun Masuk:</span> 2022</p>
+            <p><span>Email:</span> ilham.b02220042@gmail.com</p>
         </div>
-
-        <div class="identity-info">
+        
+        <div class="card-content">
             <p><span>Nama:</span> Muhamad Mauluddin</p>
             <p><span>Universitas:</span> Universitas Muhammadiyah Bima</p>
-            <p><span>Fakultas:</span> TEKNIK DAN ILMU KOMPUTER</p>
-            <p><span>Jurusan:</span> ILMU KOMPUTER</p>
+            <p><span>Fakultas:</span> Teknik dan Ilmu Komputer</p>
+            <p><span>Jurusan:</span> Ilmu Komputer</p>
             <p><span>Tahun Masuk:</span> 2022</p>
             <p><span>Email:</span> ludy04644@gmail.com</p>
         </div>
-        
+
         <button class="btn" onclick="alert('Selamat datang di halaman identitas mahasiswa!')">Lihat Profil</button>
 
-        <div class="footer">© 2025 [Nama Anda] - Mahasiswa Kreatif</div>
+        <div class="card-footer">© 2025 Ilham & Mauluddin - Mahasiswa Kreatif</div>
     </div>
 
 </body>
 </html>
-
