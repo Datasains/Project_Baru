@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kartu Mahasiswa - [Nama Anda]</title>
+    <title>Kartu Mahasiswa - Ilham & Mauluddin</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -16,11 +16,13 @@
             align-items: center;
             height: 100vh;
             overflow: hidden;
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
         .card {
             width: 100%;
-            max-width: 500px;
+            max-width: 400px;
             background-color: rgba(0, 0, 0, 0.8);
             padding: 30px;
             border-radius: 15px;
@@ -28,6 +30,7 @@
             text-align: center;
             color: #fff;
             transition: transform 0.3s;
+            margin: 20px;
         }
 
         .card:hover {
@@ -81,8 +84,9 @@
 </head>
 <body>
 
+    <!-- Kartu Identitas Ilham -->
     <div class="card">
-        <div class="card-header">Kartu Identitas Mahasiswa</div>
+        <div class="card-header">Kartu Identitas Mahasiswa - Ilham</div>
         
         <div class="card-content">
             <p><span>Nama:</span> Ilham</p>
@@ -93,6 +97,15 @@
             <p><span>Email:</span> ilham.b02220042@gmail.com</p>
         </div>
         
+        <button class="btn" onclick="alert('Selamat datang Ilham!')">Lihat Profil</button>
+
+        <div class="card-footer">© 2025 Ilham - Mahasiswa Kreatif</div>
+    </div>
+
+    <!-- Kartu Identitas Mauluddin -->
+    <div class="card">
+        <div class="card-header">Kartu Identitas Mahasiswa - Mauluddin</div>
+        
         <div class="card-content">
             <p><span>Nama:</span> Muhamad Mauluddin</p>
             <p><span>Universitas:</span> Universitas Muhammadiyah Bima</p>
@@ -102,9 +115,9 @@
             <p><span>Email:</span> ludy04644@gmail.com</p>
         </div>
 
-        <button class="btn" onclick="alert('Selamat datang di halaman identitas mahasiswa!')">Lihat Profil</button>
+        <button class="btn" onclick="alert('Selamat datang Mauluddin!')">Lihat Profil</button>
 
-        <div class="card-footer">© 2025 Ilham & Mauluddin - Mahasiswa Kreatif</div>
+        <div class="card-footer">© 2025 Mauluddin - Mahasiswa Kreatif</div>
     </div>
 
 </body>
